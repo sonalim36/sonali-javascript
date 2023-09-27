@@ -9,6 +9,7 @@
   <h1>Your JavaScript page</h1>
   <p>Use your Inspector to view your console.</p>
   <script>
+    // Just a log to show in Console
     console.log("Let's do math:");
     
     let x = 5;
@@ -40,6 +41,7 @@
     console.log(q);
     // Math on my own
 
+    // Just a log to show in Console
     console.log("Working with strings:");
     
     let firstName = 'Sonali';
@@ -54,6 +56,7 @@
     let greeting = "My name is" + " " + name;
     console.log(greeting);
 
+    //Just a log to show in Console
     console.log("Using functions:");
     
     // Function to make square numbers
@@ -65,8 +68,7 @@
       console.log(try01);
     
     // Functions on my own
-
-    // Function to make my name (only 2 names)
+      // Function to make names
     function makeName (nameFirst, nameMiddle, nameLast){
       let fullName = nameFirst + " " + nameMiddle + " " + nameLast;
       return fullName;
@@ -79,7 +81,42 @@
 
     let name03 = makeName(nameFirst = "Lana", nameMiddle = "Del", nameLast = "Rey");
     console.log(name03);
+
+    // Just a log to show in Console
+    console.log("Making better name functions");
+
+    // A better name function to fix middle initials 
+    function makeBetterName (firstName, middleName, lastName) {
+      let fullName = firstName + " " + middleName + " " + lastName;
+      return fullName;
+    }
     
+    console.log(makeBetterName("Joan", "Marie", "Larkin"));
+    console.log(makeBetterName("John", "F", "Kennedy"));
+
+    // Make a name with a middle initial 
+    function makeBetterName(firstName, middleName, lastName) {
+       if (middleName.length === 1) { //Update added here
+        middleName = middleName + ".";
+      }
+      let fullName = firstName + " " + middleName + " " + lastName;
+        return fullName;
+      }
+    
+    console.log(makeBetterName("Sarah", "J", "Parker"));
+
+    //Just a log to show in Console for a score comparison function
+    console.log("scoreCompare function");
+    function scoreCompare(home,away){
+      if (home > away) {
+        return "Home team wins!";
+      } else {
+        return "Away team wins :("
+      }
+    }
+    
+    console.log(scoreCompare(5,3));
+    console.log(scoreCompare(3,5));
   </script>
 </body>
 </html>
