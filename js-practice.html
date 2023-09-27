@@ -117,6 +117,24 @@
     
     console.log(scoreCompare(5,3));
     console.log(scoreCompare(3,5));
+
+    //Objects and Properties lesson
+    var person = {
+      firstName: "Sonali",
+      lastName: "Menon",
+      age: "21",
+      fullName : function() {
+        return this.firstName + " " + this.lastName;
+      }
+    };
+
+    person.firstName;
+    person.fullName();
+
+    console.log(person.firstName);
+    console.log(person.fullName());
+
+    
   </script>
 </body>
 </html>
